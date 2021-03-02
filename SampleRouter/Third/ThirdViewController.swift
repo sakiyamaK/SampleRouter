@@ -25,12 +25,6 @@ final class ThirdViewController: UIViewController {
     }
   }
 
-  @objc private func tapNextcountUpButton(_ sender: UIResponder) {
-    countModel.count += 1
-    countLabel.text = countModel.count.description
-  }
-
-
   @IBOutlet private weak var reStartButton: UIButton! {
     didSet {
       reStartButton.addTarget(self, action: #selector(tapReStartButton(_:)), for: .touchUpInside)
