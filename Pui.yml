@@ -1,0 +1,6 @@
+
+
+MVC:
+  Target: SampleRouter
+  TemplateDirectoryPath: ./templates/PuiTemplate/ios/MVC
+  GenerateRootPath: ./SampleRouter/
