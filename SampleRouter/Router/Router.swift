@@ -13,7 +13,7 @@ final class Router {
     static let shared: Router = .init()
     private init() {}
 
-    private (set) var window: UIWindow?
+    private var window: UIWindow?
 
     // 起動直後の画面を表示する
     func showRoot(window: UIWindow?) {
