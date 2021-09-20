@@ -10,12 +10,22 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//    var window: UIWindow?
 
-    // FirebaseApp.configure()
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-    Router.shared.showRoot(window: UIWindow(frame: UIScreen.main.bounds))
-    return true
-  }
+//        let window = UIWindow(frame: UIScreen.main.bounds)
+
+//        let vc = UIViewController()
+//        vc.view.backgroundColor = .red
+//
+//        window.rootViewController = vc
+//        window.makeKeyAndVisible()
+//
+//        self.window = window
+
+        Router.shared.showRoot(window: UIWindow(frame: UIScreen.main.bounds))
+        return true
+    }
 }
 
