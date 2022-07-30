@@ -9,7 +9,6 @@ import UIKit
 
 // 画面遷移を管理
 final class Router {
-
     static let shared: Router = .init()
     private init() {}
 
@@ -17,7 +16,7 @@ final class Router {
 
     // 起動直後の画面を表示する
     func showRoot(window: UIWindow?) {
-        //パラメータから初期画面を切り替える
+        // パラメータから初期画面を切り替える
         if !UserDefaults.standard.isLogined {
             let vc = FirstViewController.makeFromStoryboard()
             let nav = UINavigationController(rootViewController: vc)

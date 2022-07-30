@@ -7,5 +7,4 @@
 
 import UIKit
 
-final class __PREFIX__View: UIView {
-}
+final class __PREFIX__View: UIView {}

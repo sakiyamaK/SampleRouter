@@ -8,13 +8,13 @@
 import Foundation
 
 extension UserDefaults {
-  private var loginedKey: String { "logined" }
-  var isLogined: Bool {
-    set {
-      self.setValue(newValue, forKey: loginedKey)
+    private var loginedKey: String { "logined" }
+    var isLogined: Bool {
+        set {
+            setValue(newValue, forKey: loginedKey)
+        }
+        get {
+            bool(forKey: loginedKey)
+        }
     }
-    get {
-      self.bool(forKey: loginedKey)
-    }
-  }
 }

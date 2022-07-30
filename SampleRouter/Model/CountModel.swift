@@ -8,5 +8,5 @@
 import Foundation
 
 struct CountModel {
-  var count: Int = 0
+    var count: Int = 0
 }

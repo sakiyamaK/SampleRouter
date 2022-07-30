@@ -8,20 +8,19 @@
 import UIKit
 
 final class FirstViewController: UIViewController {
-
-    //storyboardからVCを生成する
+    // storyboardからVCを生成する
     static func makeFromStoryboard() -> FirstViewController {
-        let vc = UIStoryboard.firstViewController
+        let vc = UIStoryboard(name: "First", bundle: nil).instantiateInitialViewController() as! FirstViewController
         return vc
     }
 
-    @IBOutlet private weak var nextButton: UIButton! {
+    @IBOutlet private var nextButton: UIButton! {
         didSet {
             nextButton.addTarget(self, action: #selector(tapNextButton(_:)), for: .touchUpInside)
         }
     }
 
-    @objc func tapNextButton(_ sender: UIResponder) {
+    @objc func tapNextButton(_: UIResponder) {
         Router.shared.showSecond(from: self)
     }
 }
